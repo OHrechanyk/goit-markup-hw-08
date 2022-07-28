@@ -1,0 +1,9 @@
+.client__list {
+  display: flex;
+  margin-left: calc(-1 * 30px);
+}
+
+.client__item {
+  //   flex-basis: calc(100% / 6-30px);
+  margin-left: 30px;
+}

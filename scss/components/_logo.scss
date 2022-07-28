@@ -1,0 +1,23 @@
+.container-logo {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  font-style: normal;
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+}
+
+.logo__accent--web {
+  color: #2196f3;
+}
+.logo__accent--studio {
+  color: #000000;
+}

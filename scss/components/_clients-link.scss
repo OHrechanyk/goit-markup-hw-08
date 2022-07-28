@@ -1,0 +1,20 @@
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: inherit;
+  fill: #afb1b8;
+}
+
+.client__link:hover,
+.client__link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}

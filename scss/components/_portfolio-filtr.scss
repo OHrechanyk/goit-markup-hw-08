@@ -1,0 +1,10 @@
+.filtr-portfolio:hover,
+.filtr-portfolio:focus {
+  background-color: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+.filtr-portfolio:last-child {
+  margin-right: 8px;
+}
