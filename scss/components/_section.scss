@@ -7,11 +7,10 @@
     color: var(--title-color);
     margin-bottom: 4px;
   }
-}
-
-// Section footer
-.section-footer {
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // Section footer
+  &-footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }

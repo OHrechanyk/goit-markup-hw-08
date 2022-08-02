@@ -52,7 +52,6 @@ body {
   color: var(--title-color);
   margin-bottom: 4px;
 }
-
 .section-footer {
   background-color: #2f303a;
   padding-top: 60px;
@@ -125,9 +124,7 @@ p {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: var(--hero-btn-hover-color);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
