@@ -29,12 +29,12 @@
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-}
 
-.contact__link--icon {
-  display: inline-block;
-  margin-right: 10px;
-  fill: currentColor;
-  width: 16px;
-  height: 16px;
+  &--icon {
+    display: inline-block;
+    margin-right: 10px;
+    fill: currentColor;
+    width: 16px;
+    height: 16px;
+  }
 }

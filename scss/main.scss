@@ -4,14 +4,14 @@
 @import "./utils/visually-hidden";
 @import "./components/section";
 @import "./components/header";
+@import "./utils/base";
+
 // Header
 // Logo
 @import "./components/logo";
 // Navigation
 @import "./components/navigation";
-@import "./components/navigation-studio";
-@import "./components/navigation-portfolio";
-@import "./components/current-window";
+
 // Contact list header
 @import "./components/contact__list--heder";
 //
@@ -21,8 +21,7 @@
 
 // Advence
 @import "./components/advence";
-@import "./components/advence-container";
-@import "./components/advence-icon";
+
 // Work
 @import "./components/section-work";
 // Team
@@ -33,12 +32,12 @@
 @import "./components/clients";
 @import "./components/clients-link";
 // Footer
-@import "./components/section-footer";
+
 @import "./components/footer-logo";
 @import "./components/footer__list--contact";
 // Social link footer
 @import "./components/footer-tittle";
-@import "./components/social__link--footer";
+
 // Form footer
 @import "./components/footer-form";
 @import "./components/footer-subscription";
@@ -50,17 +49,17 @@
 @import "./components/modal__close--icon";
 // Form modal
 @import "./components/form-modal";
-@import "./components/form-label";
+
 @import "./components/form__field--input";
 @import "./components/form-textarea";
-@import "./components/form-icon";
+
 @import "./components/checkbox";
 
 // Portfolio
 @import "./components/portfolio";
-@import "./components/portfolio-tittle";
+
 @import "./components/portfolio-button";
-@import "./components/text__button--portfolio";
+
 @import "./components/portfolio-filtr";
 // Portfolio cards
 @import "./components/cards-container";

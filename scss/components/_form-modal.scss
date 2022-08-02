@@ -10,4 +10,23 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--text-color);
+
+  &__label {
+    display: block;
+    margin-bottom: 4px;
+    text-align: start;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    width: 18px;
+    height: 18px;
+    background-color: var(--backgruond-color);
+    fill: var(--title-color);
+  }
+}
+.form__field:focus-within > .form__icon {
+  fill: var(--accent-color);
 }

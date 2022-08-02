@@ -5,6 +5,15 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+.advence__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: var(--team-bg-color);
+}
 
 .advence__text {
   line-height: 1.71;
@@ -16,4 +25,8 @@
 }
 .advance-list__item:last-child {
   margin-right: 0;
+}
+.advence__icon {
+  width: 70px;
+  height: 70px;
 }
