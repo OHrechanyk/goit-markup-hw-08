@@ -8,6 +8,23 @@
   border-radius: 4px;
   color: inherit;
   fill: #afb1b8;
+
+  @media screen and (max-width: 479px) {
+    width: 170px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
 .client__link:hover,

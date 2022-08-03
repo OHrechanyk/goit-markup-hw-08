@@ -6,4 +6,8 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--backgruond-color);
+
+  @media screen and (max-width: 1999px) {
+    text-align: center;
+  }
 }
