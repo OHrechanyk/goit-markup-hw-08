@@ -2,6 +2,12 @@
   padding: 0;
   margin-bottom: 20px;
   margin-right: 0;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
 }
 
 .footer__logo--web {

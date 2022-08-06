@@ -6,8 +6,15 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--backgruond-color);
+  @media screen and (min-width: 320px) {
+    text-align: center;
+  }
 
-  @media screen and (max-width: 1999px) {
+  @media screen and (min-width: 1999px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 219px;
     text-align: center;
   }
 }
