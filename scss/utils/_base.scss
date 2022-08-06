@@ -14,26 +14,22 @@ p {
   padding: 0;
 }
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     width: 480px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
   }
 }
 
 .list {
-  // display: flex;
   margin: 0;
   padding: 0;
 

@@ -57,21 +57,6 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (max-width: 480px) {
-  .section {
-    width: 480px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .section {
-    width: 768px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .section {
-    width: 1200px;
-  }
-}
 
 .header {
   border: 1px solid #ececec;
@@ -106,24 +91,21 @@ p {
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -230,6 +212,11 @@ p {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
 
 .navigation__list,
 .item {
@@ -303,6 +290,20 @@ p {
           align-items: center;
   color: var(--text-color);
 }
+@media screen and (max-width: 767px) {
+  .contact__list--item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .contact__list--item:hover,
 .contact__list--item:focus {
@@ -321,12 +322,6 @@ p {
 }
 
 .contact__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -334,8 +329,6 @@ p {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .contact__link--icon {
   display: inline-block;
@@ -343,6 +336,13 @@ p {
   fill: currentColor;
   width: 16px;
   height: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .contact__link {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.16px;
+  }
 }
 
 .hero {
@@ -955,12 +955,16 @@ p {
 }
 
 .footer__subscription {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__subscription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .subscription__input {
@@ -1139,6 +1143,22 @@ p {
   fill: var(--accent-color);
 }
 
+textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+textarea {
+  resize: none;
+}
+
 .form__field {
   position: relative;
   display: -webkit-box;
@@ -1163,22 +1183,6 @@ p {
 
 .form__input:focus {
   border-color: var(--accent-color);
-}
-
-textarea {
-  resize: none;
-  width: 100%;
-  height: 120px;
-  padding: 12px;
-  margin-bottom: 20px;
-  border-radius: 4px;
-  font-size: 16px;
-  outline: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-textarea {
-  resize: none;
 }
 
 .checkbox {
@@ -1234,13 +1238,27 @@ textarea {
 }
 
 .portfolio-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 56px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 320px) {
+  .portfolio-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 56px;
+  }
 }
 
 .text-button {
@@ -1314,6 +1332,7 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
 }
 
 .description-cards:hover,
@@ -1322,10 +1341,19 @@ textarea {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.description-cards {
-  width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .description-cards {
+    width: 354px;
+    -ms-flex-preferred-size: calc(100% - 60px)/2;
+        flex-basis: calc(100% - 60px)/2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description-cards {
+    width: 370px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .description-cards:nth-child(3n) {
