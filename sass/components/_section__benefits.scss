@@ -1,0 +1,126 @@
+.benefits {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.h3-title {
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--title-text-color);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.text {
+  text-align: left;
+}
+
+.list-item {
+  @media (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+    margin: 30px, 15px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    width: 354px;
+    height: auto;
+    margin: 30px, 15px;
+    margin-bottom: 30px;
+    margin: 15px;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    width: 270px;
+    height: auto;
+    margin: 30px, 15px;
+    margin-bottom: 30px;
+    margin: 15px;
+  }
+
+  &__icon-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: var(--portfolio-buttons-bgc);
+    width: 450px;
+    height: 120px;
+
+    @media (max-width: 479px) {
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 354px;
+      height: 120px;
+    }
+
+    @media (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      width: 270px;
+      height: 120px;
+    }
+  }
+  &__icon-antenna,
+  &__icon-clock,
+  &__icon-computer,
+  &__icon-astronaut {
+    width: 65.32px;
+    height: 70px;
+    fill: var(--title-text-color);
+  }
+}
+
+.text {
+  display: inline-block;
+  max-width: 450px;
+  height: auto;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 354px;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 270px;
+    height: auto;
+  }
+}

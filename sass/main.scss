@@ -1,0 +1,32 @@
+// Base styles
+@import "./var/base";
+@import "./var/variables";
+@import "./var/body";
+@import "./components/section";
+@import "./utils/mixins";
+@import "./components/backdrop";
+// Buttons
+@import "./components/button";
+// Footer
+@import "./components/footer";
+@import "./components/footer__form";
+// Header
+@import "./components/section__header";
+@import "./components/logo";
+@import "./components/modal";
+// Navigation
+@import "./components/nav";
+
+@import "./components/section__benefits";
+@import "./components/section__hero";
+@import "./components/section__clients";
+@import "./components/section__team";
+@import "./components/section__work";
+// Social links
+@import "components/socials";
+// Portfolio
+@import "./components/cards__portfolio";
+@import "./components/nav__portfolio";
+// Mobile menu
+@import "./components/burger__menu";
+@import "./components/mobile__menu";

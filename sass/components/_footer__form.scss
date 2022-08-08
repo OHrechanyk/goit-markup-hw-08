@@ -1,0 +1,116 @@
+.form-footer {
+  @media (max-width: 479px) {
+    display: flex;
+    flex-direction: column;
+    @include flex-centered;
+    margin-top: 60px;
+  }
+
+  @media (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    @include flex-centered;
+    margin-top: 60px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    @include flex-centered;
+    margin-left: 0;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    align-items: flex-start;
+    margin-top: -43px;
+    margin-left: 0;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: "Roboto" sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secont-title-text-color);
+
+    @media (min-width: 768px) {
+      display: flex;
+      @include flex-centered;
+    }
+  }
+}
+
+.form-footer-conteiner {
+  position: relative;
+
+  @media (min-width: 768) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__input {
+    width: 358px;
+    min-height: 50px;
+    background: var(--secondary-section-background);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+
+    @media (max-width: 479px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      @include flex-centered;
+      margin-left: 0;
+      min-height: 50px;
+    }
+
+    @media (min-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      @include flex-centered;
+      margin-left: 0;
+      max-width: 450px;
+      width: 358px;
+      min-height: 50px;
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      @include flex-centered;
+      max-width: 450px;
+      height: 50px;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 0;
+      max-width: 358px;
+    }
+  }
+
+  &__input:hover,
+  &__input:focus,
+  &__input:active {
+    border-color: var(--accent-color);
+  }
+}
